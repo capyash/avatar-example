@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AvatarModel } from 'src/app/components/avatar-component/avatar-model';
+import { AvatarModel } from '../../components/avatar-component/avatar-model';
 
 @Component({
   selector: 'app-page-using-avatar-component',

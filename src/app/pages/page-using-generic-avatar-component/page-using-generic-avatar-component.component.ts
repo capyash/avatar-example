@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GenericAvatarModel } from 'src/app/components/generic-avatar-component/generic-avatar-model';
+import { GenericAvatarModel } from '../../components/generic-avatar-component/generic-avatar-model';
 
 @Component({
   selector: 'app-page-using-generic-avatar-component',
