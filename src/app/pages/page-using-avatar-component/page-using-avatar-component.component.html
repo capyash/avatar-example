@@ -1,1 +1,25 @@
-<p>page-using-avatar-component works!</p>
+<div class="container w-100">
+  <div class="row mt-4">
+    <div class="col fs-4">This page uses avatar components</div>
+  </div>
+  <hr class="w-100" />
+  <ng-container *ngFor="let avatar of avatars">
+    <div class="row">
+      <app-avatar-component [avatarOptions]="avatar"></app-avatar-component>
+    </div>
+  </ng-container>
+  <hr class="mt-5" />
+  <div class="row">
+    <p>These avatars are built using the following data:</p>
+    <pre><code>{{ avatars | json }}</code></pre>
+    <p>These components allow some limited customization such as:</p>
+    <ul class="ms-5">
+      <li>Picking which of two avatar images to use</li>
+      <li>Choosing to show a description if it exists</li>
+    </ul>
+    <p>
+      This is how most components are used, as they're designed to be used in a
+      very limited number of scenarios.
+    </p>
+  </div>
+</div>

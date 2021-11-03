@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AvatarOptions } from 'src/app/components/avatar-component/avatar.model';
 
 @Component({
   selector: 'app-page-using-avatar-component',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageUsingAvatarComponent implements OnInit {
 
+  public avatars: AvatarOptions[] = []
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.setAvatars();
   }
 
+  private setAvatars(): void {
+    this.avatars.push(new AvatarOptions({
+      name: "John Doe",
+      otherInfo: "This user has info",
+    }));
+
+    this.avatars.push(new AvatarOptions({
+      name: "Jane Doe",
+      imageType: 2
+    }));
+  }
 }

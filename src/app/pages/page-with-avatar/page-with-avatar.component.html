@@ -1,17 +1,27 @@
 <div class="container w-100">
   <div class="row mt-4">
     <div class="col fs-4">
-      This is a simple page with avatars hardcoded into it
+      This is a simple page with small card style avatars hardcoded into it
     </div>
   </div>
   <hr class="w-100" />
-  <div class="row avatar-row">
-    <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-2 border rounded">
-      <div class="row">
+  <div class="row avatar-row mt-3">
+    <div
+      class="
+        col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-3
+        border
+        rounded
+      "
+    >
+      <div class="row p-2">
         <div class="col-4">
-          <div class="row">
-            <div class="col">
-              <img class="rounded-circle" src="assets/images/avatar_1.png" alt="Avatar 1" />
+          <div class="row h-100">
+            <div class="col d-flex align-items-center h-100">
+              <img
+                class="rounded-circle img-fluid"
+                src="https://i.imgur.com/3VlttRd.png"
+                alt="Avatar 1"
+              />
             </div>
           </div>
         </div>
@@ -21,7 +31,7 @@
               <span class="fs-5">John Smith</span>
             </div>
           </div>
-          <hr>
+          <hr />
           <div class="row">
             <div class="col"><span class="fs-6">Some Other Info</span></div>
           </div>
@@ -29,6 +39,51 @@
       </div>
     </div>
   </div>
-  <div class="row avatar-row"></div>
-  <div class="row avatar-row"></div>
+  <div class="row avatar-row mt-3">
+    <div
+      class="
+        col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 col-xxl-3
+        border
+        rounded
+      "
+    >
+      <div class="row p-2">
+        <div class="col-4">
+          <div class="row h-100">
+            <div class="col d-flex align-items-center h-100">
+              <img
+                class="rounded-circle img-fluid"
+                src="https://i.imgur.com/LRbMmyA.png"
+                alt="Avatar 2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col">
+              <span class="fs-5">Jane Smith</span>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <span class="fs-6">Even more Other info</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="mt-5" />
+  <div class="row">
+    <p>
+      These avatars are baked directly into the html. They contain lots of
+      repeated code and require effort to add to each page.
+    </p>
+    <p>
+      However, they are extremely customizable as each is effectively written
+      per use. This also makes them nonreusable.
+    </p>
+  </div>
 </div>

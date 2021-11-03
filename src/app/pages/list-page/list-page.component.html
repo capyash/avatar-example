@@ -9,19 +9,31 @@
       <li class="nav-item">
         <a
           [routerLink]="['/basic']"
-          class="nav-link active"
-          aria-current="page"
+          [ngClass]="router.isActive('/basic', true) ? 'active' : 'link-dark'"
+          class="nav-link"
         >
           Simple Avatar
         </a>
       </li>
       <li>
-        <a [routerLink]="['/simple-component']" class="nav-link link-dark">
+        <a
+          [routerLink]="['/simple-component']"
+          [ngClass]="
+            router.isActive('/simple-component', true) ? 'active' : 'link-dark'
+          "
+          class="nav-link"
+        >
           Avatar as a Fixed Component
         </a>
       </li>
       <li>
-        <a [routerLink]="['/generic-component']" class="nav-link link-dark">
+        <a
+          [routerLink]="['/generic-component']"
+          [ngClass]="
+            router.isActive('/generic-component', true) ? 'active' : 'link-dark'
+          "
+          class="nav-link"
+        >
           Avatar as a Dynamic Component
         </a>
       </li>

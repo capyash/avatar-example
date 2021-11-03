@@ -8,10 +8,20 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { AvatarComponentComponent } from './components/avatar-component/avatar-component.component';
 import { GenericAvatarComponentComponent } from './components/generic-avatar-component/generic-avatar-component.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PageUsingGenericAvatarComponent } from './pages/page-using-generic-avatar-component/page-using-generic-avatar-component.component';
+import { PageUsingAvatarComponent } from './pages/page-using-avatar-component/page-using-avatar-component.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, PageWithAvatarComponent, ListPageComponent, AvatarComponentComponent, GenericAvatarComponentComponent],
+  declarations: [
+    AppComponent,
+    AvatarComponentComponent,
+    GenericAvatarComponentComponent,
+    ListPageComponent,
+    PageWithAvatarComponent,
+    PageUsingGenericAvatarComponent,
+    PageUsingAvatarComponent
+  ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
