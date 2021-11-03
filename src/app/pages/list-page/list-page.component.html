@@ -1,10 +1,34 @@
-<nav class="sidebar">
-  <ul>
-    <li class="sidebar-element">Simple Avatar</li>
-    <li class="sidebar-element">Avatar as a Fixed Component</li>
-    <li class="sidebar-element">Avatar as a Dynamic Component</li>
-  </ul>
-</nav>
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
+<main class="d-flex h-100">
+  <div
+    class="d-flex flex-column flex-shrink-0 p-3 bg-light"
+    style="width: 280px"
+  >
+    <span class="fs-4">Avatar Examples</span>
+    <hr />
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a
+          [routerLink]="['/basic']"
+          class="nav-link active"
+          aria-current="page"
+        >
+          Simple Avatar
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/simple-component']" class="nav-link link-dark">
+          Avatar as a Fixed Component
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/generic-component']" class="nav-link link-dark">
+          Avatar as a Dynamic Component
+        </a>
+      </li>
+    </ul>
+    <hr />
+  </div>
+  <div class="d-flex flex-column">
+    <router-outlet></router-outlet>
+  </div>
+</main>
