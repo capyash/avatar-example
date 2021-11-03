@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { GenericAvatarModel } from './generic-avatar-model';
 
 @Component({
   selector: 'app-generic-avatar-component',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./generic-avatar-component.component.css']
 })
 export class GenericAvatarComponentComponent implements OnInit {
+
+  @Input() public genericAvatarModel: GenericAvatarModel = new GenericAvatarModel({});
+
 
   constructor() { }
 

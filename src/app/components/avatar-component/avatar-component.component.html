@@ -6,7 +6,7 @@
       <div class="col-4">
         <div class="row h-100">
           <div class="col d-flex align-items-center h-100">
-            <ng-container [ngSwitch]="avatarOptions.imageType">
+            <ng-container [ngSwitch]="avatarModel.imageType">
               <ng-container *ngSwitchCase="1">
                 <img
                   class="rounded-circle img-fluid"
@@ -28,13 +28,13 @@
       <div class="col-8">
         <div class="row">
           <div class="col">
-            <span class="fs-5">{{ avatarOptions.name }}</span>
+            <span class="fs-5">{{ avatarModel.name }}</span>
           </div>
         </div>
-        <hr *ngIf="avatarOptions.otherInfo" />
-        <div class="row" *ngIf="avatarOptions.otherInfo">
+        <hr *ngIf="avatarModel.otherInfo" />
+        <div class="row" *ngIf="avatarModel.otherInfo">
           <div class="col">
-            <span class="fs-6">{{ avatarOptions.otherInfo }}</span>
+            <span class="fs-6">{{ avatarModel.otherInfo }}</span>
           </div>
         </div>
       </div>

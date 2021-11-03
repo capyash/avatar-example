@@ -3,7 +3,7 @@
     class="d-flex flex-column flex-shrink-0 p-3 bg-light"
     style="width: 280px"
   >
-    <span class="fs-4">Avatar Examples - Test</span>
+    <span class="fs-4">Avatar Examples</span>
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
@@ -12,7 +12,7 @@
           [ngClass]="router.isActive('/basic', true) ? 'active' : 'link-dark'"
           class="nav-link"
         >
-          Simple Avatar
+          1. Simple Avatar
         </a>
       </li>
       <li>
@@ -23,7 +23,7 @@
           "
           class="nav-link"
         >
-          Avatar as a Fixed Component
+          2. Avatar as a Fixed Component
         </a>
       </li>
       <li>
@@ -34,11 +34,10 @@
           "
           class="nav-link"
         >
-          Avatar as a Dynamic Component
+          3. Avatar as a Library Component
         </a>
       </li>
     </ul>
-    <hr />
   </div>
   <div class="d-flex flex-column flex-grow-1">
     <router-outlet></router-outlet>

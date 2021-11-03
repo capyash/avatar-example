@@ -1,1 +1,53 @@
-<p>page-using-generic-avatar-component works!</p>
+<div class="container w-100">
+  <div class="row mt-4">
+    <div class="col fs-4">This page uses avatar components</div>
+  </div>
+  <hr class="w-100" />
+  <ng-container *ngFor="let avatar of avatars">
+    <div class="row">
+      <app-generic-avatar-component
+        [genericAvatarModel]="avatar"
+      ></app-generic-avatar-component>
+    </div>
+  </ng-container>
+  <hr class="mt-5" />
+  <div class="row">
+    <div class="col">
+      <p>
+        The component used here is much closer to a standardised library. It
+        allows a much wider gamut of customizations, designed for use across
+        multiple projects with exact use cases not set in concrete. This allows
+        a number of customizations, including:
+      </p>
+      <ul class="ms-5">
+        <li>
+          Providing an image for use as an avatar, with a default as well as an
+          option to hide the image entirely.
+        </li>
+        <li>
+          Choosing to show a description if it exists, as well as providing the
+          ability to project a custom description using content projection.
+        </li>
+      </ul>
+      <p>
+        This is how a long lived library component is created, as they're
+        designed to be used in an ongoing manner. There are two approaches to
+        building these components:
+      </p>
+      <ul class="ms-5">
+        <li>
+          Adding more features as needed to the component in example #2, which
+          adds complexity over time as backwards compatibility for existing uses
+          has to be maintained.
+        </li>
+        <li>
+          Having a standardised design spec that is being targetted rather than
+          a specific use case. This process has a longer lead up time, but
+          iterating design and implementation in the context of standard
+          features rather than ad-hoc, current usage based additions leads to
+          more flexibility and less maintanence issues in the long term.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
